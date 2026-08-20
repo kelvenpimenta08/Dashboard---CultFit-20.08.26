@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cult Fitness · Performance Meta Ads · Laranjal e Vila Rica</title>
+<title>CultFit · Performance Meta Ads · Laranjal e Vila Rica</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -170,7 +170,7 @@ footer b{color:var(--preto)}
         <button data-u="vilarica">Unidade Vila Rica</button>
       </div>
     </div>
-    <div class="eyebrow" style="margin-top:18px;position:relative;z-index:2">Cult Fitness · Meta Ads · primeiros 18 dias de operação</div>
+    <div class="eyebrow" style="margin-top:18px;position:relative;z-index:2">CultFit · Meta Ads · primeiros 18 dias de operação</div>
     <h1 id="heroTitle"></h1>
     <p class="sub" id="heroSub"></p>
     <div class="hero-meta">
@@ -240,7 +240,7 @@ footer b{color:var(--preto)}
 </div></main>
 
 <footer><div class="wrap">
-  <p><b>Metodologia.</b> Base: exportações diárias do Gerenciador de Anúncios da Meta das duas contas da Cult Fitness, período de 03 a 20 de agosto de 2026. O investimento por linha é reconstruído a partir de impressões e CPM, porque a exportação não trouxe a coluna de valor usado. O total confere com o somatório das campanhas em ambas as contas. O dia 20 de agosto é parcial e fica fora das médias e projeções enquanto a opção acima estiver marcada. Alcance é a soma diária e não é deduplicado entre dias nem entre unidades.</p>
+  <p><b>Metodologia.</b> Base: exportações diárias do Gerenciador de Anúncios da Meta das duas contas da CultFit, período de 03 a 20 de agosto de 2026. O investimento por linha é reconstruído a partir de impressões e CPM, porque a exportação não trouxe a coluna de valor usado. O total confere com o somatório das campanhas em ambas as contas. O dia 20 de agosto é parcial e fica fora das médias e projeções enquanto a opção acima estiver marcada. Alcance é a soma diária e não é deduplicado entre dias nem entre unidades.</p>
   <p style="margin-top:10px"><b>Atribuição por unidade.</b> A campanha de tráfego para perfil do Laranjal está hospedada na conta da Vila Rica. Neste painel ela é contada na unidade Laranjal, que é quem ela promove. Por isso o investimento do Laranjal aqui é maior do que aparece isolado na conta dele. No detalhamento por criativo essa separação não é possível, porque a exportação de anúncios não traz a campanha de origem.</p>
   <p style="margin-top:10px">Conversa iniciada no WhatsApp não é o mesmo que lead qualificado. O custo por atendimento e por matrícula só fica exato quando o time devolver a conversão pós WhatsApp. Keepads · gestão de tráfego pago.</p>
 </div></footer>
@@ -386,9 +386,9 @@ function funilConversa(cv,tot){
     {t:'Impressões',v:n0(cv.imp),r:`<span class="tag">CPM</span> ${brl(div(cv.spend,cv.imp)*1000)}`},
     {t:'Cliques no link',v:n0(lc),l:`<span class="tag">CTR link</span> <span class="n">${pct(div(cv.lc,cv.imp)*100)}</span>`,r:`<span class="tag">CPC link</span> ${brl(div(cv.spend,lc))}`},
     {t:'Conversas no WhatsApp',v:n0(cv.conv),l:`<span class="tag">clique para conversa</span> <span class="n">${pct(div(cv.conv,cv.lc)*100)}</span>`,r:`<span class="tag">custo por conversa</span> ${brl(div(cv.spend,cv.conv))}`,cls:'acc'},
-    {t:'Matrículas',v:'dado do comercial',l:`<span class="tag">etapa fora da mídia</span>`,r:`<span class="tag">a ser informado</span> pela Cult Fitness`,cls:'proj'}
+    {t:'Matrículas',v:'dado do comercial',l:`<span class="tag">etapa fora da mídia</span>`,r:`<span class="tag">a ser informado</span> pela CultFit`,cls:'proj'}
   ];
-  const nota=`<div class="note warn" style="margin-top:16px"><b>A mídia entrega até a conversa.</b> O que acontece dentro do WhatsApp não aparece no Gerenciador, então este painel não estima matrícula e não inventa taxa de fechamento. Para fechar o funil é preciso que a Cult Fitness informe quantas dessas conversas viraram visita e quantas viraram matrícula. Com esse número em mãos, o custo real por aluno passa a ser medido em vez de suposto.</div>
+  const nota=`<div class="note warn" style="margin-top:16px"><b>A mídia entrega até a conversa.</b> O que acontece dentro do WhatsApp não aparece no Gerenciador, então este painel não estima matrícula e não inventa taxa de fechamento. Para fechar o funil é preciso que a CultFit informe quantas dessas conversas viraram visita e quantas viraram matrícula. Com esse número em mãos, o custo real por aluno passa a ser medido em vez de suposto.</div>
   <div class="note info" style="margin-top:12px">Além da verba de conversa, <b>${brl(tot.spend-cv.spend)}</b> foram para topo de funil e tráfego para perfil, que geraram <b>${n0(tot.imp-cv.imp)}</b> impressões a um CPM de <b>${brl(div(tot.spend-cv.spend,tot.imp-cv.imp)*1000)}</b>. Esse dinheiro não compra conversa hoje. Ele compra lembrança de marca no raio da unidade, que fica dentro de um clube e não tem fluxo de rua, e barateia a conversa dos meses seguintes.</div>`;
   return `<div class="sec"><div class="sec-h"><h2>Da verba até a conversa</h2><p>Somente as campanhas de conversa entram no cálculo de custo por lead.</p></div>
     <div class="card funil">${funilRows(rows,[100,92,80,68,56],nota)}</div></div>`;
@@ -805,14 +805,14 @@ function renderProj(a,b,days){
    <div class="sec"><div class="card" style="padding:24px">
      <div class="eyebrow">Etapa fora do alcance da mídia</div>
      <h3 style="font-size:17px;margin:6px 0 10px">O que falta para medir o retorno de verdade</h3>
-     <p style="font-size:13.5px;line-height:1.72;color:#2A3330">O Gerenciador de Anúncios mede até a conversa iniciada no WhatsApp. Da conversa em diante o dado está com a Cult Fitness, e por isso este painel <strong>não estima matrícula, não estima receita e não sugere taxa de fechamento</strong>. Projetar aluno a partir de anúncio seria inventar número, e número inventado quebra a confiança na hora que o resultado real não bate.</p>
+     <p style="font-size:13.5px;line-height:1.72;color:#2A3330">O Gerenciador de Anúncios mede até a conversa iniciada no WhatsApp. Da conversa em diante o dado está com a CultFit, e por isso este painel <strong>não estima matrícula, não estima receita e não sugere taxa de fechamento</strong>. Projetar aluno a partir de anúncio seria inventar número, e número inventado quebra a confiança na hora que o resultado real não bate.</p>
      <p style="font-size:13.5px;line-height:1.72;color:#2A3330;margin-top:10px">Com quatro informações simples o funil fecha e o custo real por aluno passa a ser medido:</p>
      <div class="card tbl-wrap" style="margin-top:12px;box-shadow:none">
        <table><thead><tr><th>Informação necessária</th><th>Quem informa</th><th>Frequência</th></tr></thead><tbody>
-       <tr><td class="name">Quantas conversas do WhatsApp viraram visita agendada na unidade</td><td>Cult Fitness</td><td>semanal</td></tr>
-       <tr><td class="name">Quantas dessas visitas viraram matrícula efetivada</td><td>Cult Fitness</td><td>semanal</td></tr>
-       <tr><td class="name">Qual plano foi fechado em cada matrícula, para saber o ticket praticado</td><td>Cult Fitness</td><td>mensal</td></tr>
-       <tr><td class="name">Tempo médio que o aluno permanece antes de cancelar</td><td>Cult Fitness</td><td>trimestral</td></tr>
+       <tr><td class="name">Quantas conversas do WhatsApp viraram visita agendada na unidade</td><td>CultFit</td><td>semanal</td></tr>
+       <tr><td class="name">Quantas dessas visitas viraram matrícula efetivada</td><td>CultFit</td><td>semanal</td></tr>
+       <tr><td class="name">Qual plano foi fechado em cada matrícula, para saber o ticket praticado</td><td>CultFit</td><td>mensal</td></tr>
+       <tr><td class="name">Tempo médio que o aluno permanece antes de cancelar</td><td>CultFit</td><td>trimestral</td></tr>
        </tbody></table></div>
      <div class="note warn" style="margin-top:14px">Enquanto esse retorno não chega, a leitura correta da conta é por <b>custo por conversa</b> e por <b>volume de conversa</b>, que é exatamente o que a mídia controla. Assim que os números do comercial começarem a voltar, este painel passa a mostrar custo por visita, custo por matrícula e retorno sobre o investimento com dado real.</div>
    </div></div>`;
@@ -851,7 +851,7 @@ function renderDiag(a0,b0,days0){
   } else if(state.unit==='laranjal'){
     html=`<h3><span class="n">1</span> O que aconteceu nos primeiros 18 dias</h3>
      <p>A unidade começou do zero em 3 de agosto e investiu <span class="ev">${brl(L.spend)}</span> até o dia 19, gerando <span class="ev">${n0(Lc.conv)} conversas</span> iniciadas no WhatsApp. Considerando apenas a verba das campanhas que compram conversa, o custo ficou em <span class="ev">${brl(div(Lc.spend,Lc.conv))}</span>. Na leitura mais conservadora, dividindo cem por cento do investimento da unidade pelo total de conversas, o custo fica em <span class="ev">${brl(div(L.spend,Lc.conv))}</span>, ainda dentro da faixa de R$ 10 a R$ 15 que a região pratica em academia.</p>
-     <p>Dos ${n0(Lc.conv)} contatos, <strong>${n0(Lc.newc)} são pessoas que nunca haviam falado com a unidade</strong>. Isso responde a uma das dores levantadas no briefing, que era a dependência quase total de indicação e de agregador. A mídia está trazendo demanda nova, não reciclando quem já conhecia a Cult.</p>
+     <p>Dos ${n0(Lc.conv)} contatos, <strong>${n0(Lc.newc)} são pessoas que nunca haviam falado com a unidade</strong>. Isso responde a uma das dores levantadas no briefing, que era a dependência quase total de indicação e de agregador. A mídia está trazendo demanda nova, não reciclando quem já conhecia a CultFit.</p>
 
      <h3><span class="n">2</span> A conta melhorou enquanto escalava</h3>
      <p>Nos sete dias mais recentes o investimento em conversa subiu para <span class="ev">${brl(l7.spend)}</span> contra <span class="ev">${brl(p7.spend)}</span> na semana anterior, um aumento de <strong>${pct((l7.spend/p7.spend-1)*100)}</strong>. No mesmo movimento, o custo por conversa foi de ${brl(div(p7.spend,p7.conv))} para <strong>${brl(div(l7.spend,l7.conv))}</strong>. Escalar verba e baratear o resultado ao mesmo tempo é o sinal mais confiável de que o algoritmo saiu do aprendizado e ainda existe público disponível para absorver mais investimento.</p>
@@ -894,12 +894,12 @@ function renderDiag(a0,b0,days0){
 
   const base=[
     ['Renovar a matriz de criativo de conversa com 4 variações da oferta que já converte','Keepads','alta','laranjal'],
-    ['Enviar o retorno comercial: quantas conversas viraram visita e quantas viraram matrícula, por semana','Cult Fitness','alta','laranjal'],
+    ['Enviar o retorno comercial: quantas conversas viraram visita e quantas viraram matrícula, por semana','CultFit','alta','laranjal'],
     ['Separar o público de remarketing com oferta própria, hoje ele paga mais caro por conversa que o público frio','Keepads','média','laranjal'],
-    ['Padronizar o tempo de resposta no WhatsApp e medir o intervalo entre a conversa e a primeira resposta','Cult Fitness','média','laranjal'],
+    ['Padronizar o tempo de resposta no WhatsApp e medir o intervalo entre a conversa e a primeira resposta','CultFit','média','laranjal'],
     ['Publicar a landing page de venda para receber a campanha e liberar remarketing de site','Keepads','média','laranjal'],
     ['Criar campanha de captura de lista de espera para avisar quando abrir vaga','Keepads','alta','vilarica'],
-    ['Definir com o Pedro a data provável de abertura de vagas para preparar a mídia com antecedência','Cult Fitness','alta','vilarica'],
+    ['Definir com o Pedro a data provável de abertura de vagas para preparar a mídia com antecedência','CultFit','alta','vilarica'],
     ['Regravar o miolo dos vídeos de melhor hook, mantendo os primeiros segundos','Keepads','média','vilarica'],
     ['Planejar a ação de migração de aluno de agregador para plano próprio usando a base de seguidores','Keepads','média','vilarica'],
     ['Mover a campanha de perfil do Laranjal para a conta dele, hoje ela divide leilão com a Vila Rica e encarece as duas','Keepads','alta','todas'],
